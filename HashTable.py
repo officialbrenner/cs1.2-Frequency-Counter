@@ -30,7 +30,11 @@ class HashTable:
 
   def hash_func(self, key):
     
-    pass
+    word = key.lower()
+    hashNum = ord(word[0])
+    index = hashNum % self.size
+    
+    return index
 
 
   # 3️⃣ TODO: Complete the insert method.
